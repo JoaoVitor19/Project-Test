@@ -2,6 +2,9 @@ package com.example.projeto.Locador.controller;
 
 import com.example.projeto.Locador.dto.LocadorDto;
 import com.example.projeto.Locador.service.LocadorService;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

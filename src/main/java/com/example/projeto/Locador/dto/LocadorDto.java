@@ -23,12 +23,6 @@ public class LocadorDto {
         this.email = email;
     }
 
-    public LocadorDto(Locador entity) {
-        name = entity.getName();
-        CPF = entity.getCPF();
-        email = entity.getEmail();
-    }
-
     public Long getId() {
         return id;
     }

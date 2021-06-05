@@ -20,7 +20,7 @@ public class LocadorService {
 
     public List<LocadorDto> findAll(){
         List<Locador> rslocador = locadorRepository.findAll();
-        return rslocador.stream().map(x -> new LocadorDto(x)).collect(Collectors.toList());
+        return rslocador.stream().map(LocadorDto::from).collect(Collectors.toList());
     }
 
     public LocadorDto findById(Long id) {

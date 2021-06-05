@@ -28,14 +28,6 @@ public class ProdutoDto {
         this.category = category;
     }
 
-    public ProdutoDto(Produto entity) {
-        id = entity.getId();
-        name = entity.getName();
-        value = entity.getValue();
-        description = entity.getDescription();
-        category = entity.getCategory();
-    }
-
     public Long getId() {
         return id;
     }

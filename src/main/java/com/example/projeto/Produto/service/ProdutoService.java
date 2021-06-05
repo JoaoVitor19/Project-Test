@@ -20,7 +20,7 @@ public class ProdutoService {
 
     public List<ProdutoDto> findAll() {
         List<Produto> rsproduto = produtoRepository.findAll();
-        return rsproduto.stream().map(x -> new ProdutoDto(x)).collect(Collectors.toList());
+        return rsproduto.stream().map(ProdutoDto::from).collect(Collectors.toList());
     }
 
     public ProdutoDto findById(Long id) {
